@@ -1,1 +1,44 @@
-/* Пиши стили тут */
+body {
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.rating {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    position: absolute;
+    top: 570px;
+    left: 580px;
+
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 50px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.rating label:hover,
+.rating label:hover~label {
+    color: gold;
+}
+
+.rating input:checked~label {
+    color: gold;
+}
+
+.background {
+    background-image: url("img/638aaf0af3f20f7a32073ac60f66b0f9.webp");
+    width: 387px;
+    height: 800px;
+   
+}
